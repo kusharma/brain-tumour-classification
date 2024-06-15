@@ -31,6 +31,14 @@ The dataset consists of approximately 5000 training images and 1300 test images,
 - Pituitary
 - No tumor
 
+## Overview
+
+|              | **Meningioma**                                                               | **Glioma**                                                                                           | **Pituitary**                                |
+|--------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|----------------------------------------------|
+| **Location** | Protective membrane (outside the brain)                                     | Glial cells (inside the brain)                                                                       | Pituitary gland (base of the brain, one location) |
+| **B/M**      | Benign                                                                      | Somewhat benign or malignant                                                                         | Mostly benign, rarely malignant              |
+| **Priority** | Meningiomas are difficult to distinguish from other cancer types due to colocation, lowest priority | Includes GBM, an aggressive, high-grade malignant (aka brain cancer), highest priority for precision and recall (sensitivity) | Easy to detect due to known location, low priority |
+
 EDA (Exploratory Data Analysis) included visualizing the distribution of images across classes and augmenting the data through techniques like flipping and rotation to improve model performance.
 
 ## Model Training
@@ -60,7 +68,7 @@ EDA (Exploratory Data Analysis) included visualizing the distribution of images 
 ## Results
 - **Baseline CNN Models:**
   - Performance improved by increasing layers and depth.
-  - Best results with a 4-layer deeper CNN model.
+  - Best results with a 3-layer deeper CNN model.
 - **Data Augmentation:**
   - Flipping images left and right significantly improved recall and F1 score.
 - **Xception + DNN Model:**
@@ -70,10 +78,10 @@ EDA (Exploratory Data Analysis) included visualizing the distribution of images 
 ### Confusion Matrix
 ![Confusion Matrix](reports/img/CNN_3LD_Flip_LeftRight_ConfusionMatrix.png)
 
-### Training and Validation Loss
+### Training and Validation Loss for Xception Model
 ![Losses](reports/img/XCEPTION_UNFROZEN.png)
 
-### Training and Validation Accuracy
+### Training and Validation Accuracy for Xception Model
 ![Accuracy](reports/img/XCEPTION_FROZEN.png)
 
 ### Recall
