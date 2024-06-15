@@ -79,10 +79,6 @@ EDA (Exploratory Data Analysis) included visualizing the distribution of images 
 ### Training and Validation Loss for Xception Model
 ![Losses](reports/img/XCEPTION_UNFROZEN.png)
 
-### Training and Validation Accuracy for Xception Model
-![Accuracy](reports/img/XCEPTION_FROZEN.png)
-
-
 
 ### Recall
 | Model                              | Recall |
