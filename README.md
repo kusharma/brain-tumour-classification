@@ -74,15 +74,15 @@ EDA (Exploratory Data Analysis) included visualizing the distribution of images 
 - **Xception + DNN Model:**
   - Fine-tuning all layers led to a 4.5% performance boost.
   - Achieved the highest accuracy and recall, making it suitable for production use.
-  
-### Confusion Matrix
-![Confusion Matrix](reports/img/CNN_3LD_Flip_LeftRight_ConfusionMatrix.png)
+
 
 ### Training and Validation Loss for Xception Model
 ![Losses](reports/img/XCEPTION_UNFROZEN.png)
 
 ### Training and Validation Accuracy for Xception Model
 ![Accuracy](reports/img/XCEPTION_FROZEN.png)
+
+
 
 ### Recall
 | Model                              | Recall |
@@ -101,6 +101,21 @@ EDA (Exploratory Data Analysis) included visualizing the distribution of images 
 | CNN_3LD_Flip_LEFTRIGHT_BRIGHTNESS_0.05 | 0.9639      |
 | CNN_3LayerDeeper_Conv2D            | 0.9608      |
 | CNN_3LD_Flip_LEFTRIGHT_ROT8        | 0.9549      |
+
+| Base CNN Model | Xception Model |
+|------------|----------------|
+| ![Confusion Matrix](reports/img/CNN_3LD_Flip_LeftRight_ConfusionMatrix.png) | ![Confusion Matrix](reports/img/XCEPTION_ConfusionMatrix.png) |
+
+### Comparison and Improvement
+
+The confusion matrices compare the performance of the base model and Xception model:
+
+- **Glioma:** Xception improves correct classifications (288 vs. 277) and reduces misclassifications.
+- **Meningioma:** Slightly better performance with fewer misclassifications.
+- **Notumor:** Both models perform similarly, with Xception slightly better.
+- **Pituitary:** Xception improves correct classifications and reduces misclassifications.
+
+Overall, the Xception model shows better accuracy and fewer errors compared to the base model.
 
 ## Tools Used
 - TensorFlow 🌟
