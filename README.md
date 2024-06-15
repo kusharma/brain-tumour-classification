@@ -102,11 +102,12 @@ EDA (Exploratory Data Analysis) included visualizing the distribution of images 
 | CNN_3LayerDeeper_Conv2D            | 0.9608      |
 | CNN_3LD_Flip_LEFTRIGHT_ROT8        | 0.9549      |
 
+### Confusion matrix
 | Base CNN Model | Xception Model |
 |------------|----------------|
 | ![Confusion Matrix](reports/img/CNN_3LD_Flip_LeftRight_ConfusionMatrix.png) | ![Confusion Matrix](reports/img/XCEPTION_ConfusionMatrix.png) |
 
-### Comparison and Improvement
+### Improvement over detection of meningioma and glioma
 
 The confusion matrices compare the performance of the base model and Xception model:
 
